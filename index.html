@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mascota</title>
+</head>
+<body class="cuerpo">
+    <main class="wrap">
+        <header class="main_header">
+            <h1>Mi mascota</h1>
+        </header>
+        <div class="container">       
+            <div class="container2">           
+                <section class="contenido">
+                    <header>
+                    <h2 class="nombre">Mi nombre</h2> 
+                    </header>
+                    <p class="texto">
+                        Hola me llamo <span class="nombre"></span> y soy un <span class="tipo"></span>. Tengo <span class="edad"></span> años y soy de sexo <span class="sexo"></span>. Si me pierdo mi microchip es <span class="microchip"></span>.
+                    </p>
+                </section>
+            </div> 
+        </div>
+        <form class="formulario" action="./">
+            <fieldset>
+                <legend>Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input placeholder="Sólo son válidos caracteres" autofocus type="text" id="nombre" name="nombre">     
+                </div>
+                <div class="campo">
+                    <label for="tipo">Tipo</label>
+                    <input placeholder="Sólo son válidos caracteres" type="text" list="listatipo" id="tipo" name="tipo">
+                    <datalist id="listatipo">
+                        <option value="perro"></option>
+                        <option value="gato"></option>
+                    </datalist>  
+                </div>
+                <div class="campo">
+                    <label for="microchip">Microchip</label>
+                    <input type="text" id="microchip" name="microchip" value="microchip">
+                </div>
+                <div class="campo">
+                    <label for="edad">Edad</label>
+                    <input placeholder="Sólo son valores numéricos" type="text" id="edad" name="edad">     
+                </div>
+                <div class="campo">
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="f">femenino</option>
+                        <option value="m">masculino</option>
+                    </select>
+                </div>
+            </fieldset>
+            <input type="submit" value="Cargar datos">
+        </form>      
+    </main>
+    <script src="js/clase_mascota.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
